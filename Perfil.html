@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandria Culinaria</title>
+    <link rel="icon" href="assets/logoF.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="Inicio.html"><img src="assets/Atras.png" alt="Imagen inicio" class="atras"></a>
+    <a href="index.html"><img src="assets/Cerrar.png" alt="Imagen inicio" class="logo"></a>
+    <div class="perfil-usuario">
+        <h2 class="titulor">Perfil</h2><br><br>
+        <div class="fila">
+        <label>Nombre:</label>
+        <div class="dato">[Aquí el nombre del usuario]</div>
+        </div>
+        <div class="fila">
+        <label>Correo electrónico:</label>
+        <div class="dato">[Aquí el correo]</div>
+       </div><br>
+    
+        <h3 class="titulop1">Recetas compartidas:</h3>
+        <div class="recetas">
+            <div class="tarjeta-receta">
+                <div class="titulo-caja">Pasta</div>
+                <img src="assets/pasta.png" alt="Lasaña" class="imag">
+                <button class="anular">
+                    <div class="row">
+                        <div class="col">
+                        <a href="crear.html">
+                            <img src="assets/editar.jpg" alt="Editar" class="anular" style="width: 30px; height: 30px;">
+                        </a>
+                        </div>
+                        <div class="col">
+                        <a href="crear.html">
+                            <img src="assets/borrar.png" alt="Editar" class="anular" style="width: 30px; height: 30px;">
+                        </a>
+                        </div>
+                    </div>
+                </button>                  
+            </div>
+            <div class="tarjeta-receta">
+                <div class="titulo-caja">Hamburguesa</div>
+                <img src="assets/hamburguesa.png" alt="Hamburguesa">
+                <button class="anular">
+                    <div class="row">
+                        <div class="col">
+                        <a href="crear.html">
+                            <img src="assets/editar.jpg" alt="Editar" class="anular" style="width: 30px; height: 30px;">
+                        </a>
+                        </div>
+                        <div class="col">
+                        <a href="crear.html">
+                            <img src="assets/borrar.png" alt="Editar" class="anular" style="width: 30px; height: 30px;">
+                        </a>
+                        </div>
+                    </div>
+                </button>  
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <a href="Contact.html">Contactanos</a>
+        <a href="About.html">Sobre nosotros</a>
+        <img src="assets/logo.png" alt="logo" class="logof">
+    </footer>  
+    <script src="./js/bootstrap.bundle.min.js"></script> 
+    <script>
+    document.querySelectorAll('a').forEach(link => {
+    link.href = link.href.toLowerCase();
+    });
+    </script>
+    
+</body>
+</html>

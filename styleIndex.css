@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+.container {
+    display: flex;
+    max-width: 900px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-grid {
+    width: 50%;
+}
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-box {
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.login-box input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.forgot {
+    display: block;
+    margin: 20px;
+    font-size: 12px;
+    color: #007bff;
+    text-decoration: none;
+}
+.btn {
+    width: 50%;
+    padding: 10px;
+    background: #28d17c;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rutas {
+    display: block;
+    margin: 20px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer; 
+}
+.titulo {
+    background-color: #f0f0f0;
+    margin: 80px auto 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+}
+@media (max-width: 768px) 
+{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal compacto */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Login box móvil */
+.login-box {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Elementos de formulario más pequeños */
+.login-box input {
+    width: 90%;
+    padding: 8px ;
+    margin: 8px;
+    font-size: 14px;
+}
+
+/* Botones compactos */
+.btn {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Textos más pequeños */
+.forgot, .rutas {
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+/* Título compacto */
+.titulo {
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+/* Ocultar imagen grid en móvil */
+.image-grid {
+    display: none;
+}
+}

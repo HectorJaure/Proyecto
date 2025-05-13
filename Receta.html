@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandria Culinaria</title>
+    <link rel="icon" href="assets/logoF.png" type="image/png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .rating {
+          display: inline-block;
+          direction: rtl; /* Invierte el orden para facilitar la selección */
+        }
+        
+        .rating input {
+          display: none;
+        }
+        
+        .rating label {
+          font-size: 2em;
+          color: #ddd;
+          cursor: pointer;
+        }
+        
+        .rating input:checked ~ label {
+          color: #ffcc00;
+        }
+        
+        .rating label:hover,
+        .rating label:hover ~ label {
+          color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+<div class="contenido">
+    <img src="assets/logo.png" alt="logo" class="logo">
+    <a href="Inicio.html"><img src="assets/atras.png" alt="Imagen inicio" class="atras"></a><br>
+    <h1 class="titulo"><i>Pasta</i></h1>
+    <div class="menus">
+    <a href="Busqueda.html"><button>Busqueda avanzadas</button></a>
+    <a href="Crear.html"><button>Publicar receta</button></a>
+    <a href="Favoritas.html"><button>Recetas favoritas</button></a><br>
+    <br>
+    </div>
+        <img src="assets/pasta.png" alt="Pasta" class="acomodari">
+    </div>
+    <div class="acomodarti">
+        <h1>Ingredientes</h1>
+    </div>
+    <div class="acomodarte">
+    <ul>
+        <li>200 g de pasta (espagueti, penne, etc.)</li>
+        <li>2 cucharadas de aceite de oliva</li>
+        <li>2 dientes de ajo picados</li>
+        <li>400 g de tomates triturados</li>
+        <li>1 cucharadita de azúcar</li>
+        <li>Sal y pimienta al gusto</li>
+        <li>5 hojas de albahaca fresca</li>
+    </ul>
+    </div>
+    <div>
+        <h1 class="titulopre">Preparacion</h1>
+    </div>
+    <div class="acomodarta">
+       <ol>
+            <li>Cocina la pasta en agua con sal.</li>
+            <li>En una sartén, sofríe el ajo en aceite, añade el tomate, azúcar, sal y pimienta. Cocina 10 min.</li>
+            <li>Mezcla la pasta con la salsa y albahaca picada.</li>
+        </ol>
+    </div>
+</div>
+<section id="Calificar_y_comentar" class="pt-2 pb-2">
+    <div class="container">
+        <div class="row">
+            <div class="col text-uppercase text-center">
+                <h2 style="font-family: 'Lucida Handwriting', cursive;">Comentario</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+            <form>
+                <div class="row">
+                    <div class="col-12">
+                        <label for="nombre" class="form-label" style="display: flex;justify-content:  center; align-items: center; font-family: 'Lucida Handwriting', cursive;">Calificar</label>
+                        <div class="rating" style="display: flex;justify-content:  center; align-items: center;">
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4">★</label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3">★</label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2">★</label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1">★</label>
+                            <input type="radio" id="star0" name="rating" value="0" /><label for="star0">★</label>
+                        </div><br>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control form-control-lg" placeholder="Comentario" id="floatingTextarea"></textarea>
+                    </div>
+                </div>
+                <div class="row pb-3 pt-3">
+                    <button type="button" class="btn btn-platz1" href="Receta.html">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>  
+<footer class="footer">
+    <a href="Contact.html">Contactanos</a>
+    <a href="About.html">Sobre nosotros</a>
+    <img src="assets/logo.png" alt="logo" class="logof">
+</footer> 
+<script src="./js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

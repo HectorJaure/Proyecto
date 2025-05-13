@@ -1,0 +1,743 @@
+body {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    width: 100vw; 
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/fondo.png');
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.titulo {
+    background-color: #f0f0f0;
+    margin: 80px auto 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+}
+
+.tituloa {
+    background-color: #f0f0f0;
+    margin: 80px auto 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+}
+
+.titulo1 {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1rem;
+}
+
+.titulopre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    margin: 350px auto 0 auto; 
+}
+
+.espacio{
+    margin: 20px auto;
+}
+
+.acomodari{
+    position: absolute;
+    margin: 240px 750px 0 0;
+}
+
+.acomodarti{
+    position: absolute;
+    font-family: 'Lucida Handwriting', cursive;
+    margin: -450px 0 200px 500px;
+}
+
+.acomodarte{
+    position: absolute;
+    font-family: 'Lucida Handwriting', cursive;
+    margin: -150px 0 200px 650px;
+}
+
+.acomodarte ul{
+    font-size: 20px;
+}
+
+.acomodarta {
+    margin: 20px auto; /* Añade margen superior e inferior */
+    width: 80%; /* Ajusta el ancho */
+    max-width: 800px; /* Máximo ancho */
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.acomodarta ul {
+    font-family: 'Lucida Handwriting', cursive;
+    white-space: pre-wrap; /* Para que el texto se ajuste */
+    margin: auto auto 50px auto;
+    padding: 10px;
+}
+
+.menus
+{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+button
+{
+    width: 100px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+}
+button:hover {
+    background-color: greenyellow 
+}
+.perfil{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 100px;
+    height: auto;
+}
+.atras{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 100px;
+    height: auto;
+}
+.logo{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100px;
+    height: auto;
+}
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color: orange; 
+    color: aliceblue;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+    margin-top: auto;
+}
+
+a {
+    text-decoration: none; 
+    color: black;  
+    cursor: pointer;  
+}
+a:hover {
+    color: white;  
+}
+.logof
+{
+    width: 90px;
+}
+.contenedor-categorias {
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 90%; 
+    margin-top: 20px;
+}
+
+.caja {
+    width: 200px;
+    margin-bottom: 20px;
+    background-color: #76b293;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-contact{
+    width: 50%;
+    bottom: 10%;
+    margin-bottom: auto;
+    background-color: #76b293;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja-contactc{
+    width: 800px;
+    bottom: 10%;
+    margin-bottom: auto;
+    background-color: #76b293;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}  
+
+.textareaPre
+{
+    resize: none;
+    width: 800px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.caja img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.titulo-caja {
+    background-color: #dcdcdc;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contenido{
+    flex: 1;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+
+
+.titulop
+{
+    background-color: #f0f0f0;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+}
+
+.titulop1
+{
+    background-color: #f0f0f0;
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 1.5rem;
+}
+
+.titulor
+{
+    background-color: #f0f0f0;
+    margin: 50px auto 20px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 90%;
+    font-family: 'Lucida Handwriting', cursive;
+    font-size: 2rem;
+}
+
+.centrar
+{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px !important;
+}
+
+.centrar img
+{
+    width: 25px;
+}
+
+.perfil-usuario {
+    width: 85%;
+    max-width: 900px;
+    padding: 10px;
+    margin: 50px auto 40px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+/* Etiquetas y campos de texto */
+.perfil-usuario label {
+    display: inline-block;
+    width: 150px; /* Ancho fijo para alinear */
+    font-weight: bold;
+}
+
+.perfil-usuario .dato {
+    background-color: #dcdcdc;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 10px auto;
+}
+
+.fila {
+    margin-bottom: 10px; /* Espacio entre filas */
+  }
+
+/* Recetas compartidas */
+.recetas {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjeta individual */
+.tarjeta-receta {
+    width: 20%;
+    background-color: #76b293;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    position: static;
+}
+
+.tarjeta-receta img {
+        width: 80%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 0 auto;
+}
+
+.tarjeta-receta .titulo-caja {
+    background-color: #dcdcdc;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.anular
+{
+    position: relative;
+    background-color: #76b293;
+    margin-top: 10px;
+}
+
+.anular:hover
+{
+    background-color: #76b293;
+    cursor: pointer;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.busqueda input {
+    padding: 12px;
+    border: none;
+    margin: 80px auto 0 auto;
+    background-color: #e0e0e0;
+    border-radius: 20px 0 0 20px;
+    width: 600px;
+    font-size: 1rem;
+}
+  
+.busqueda button {
+    background-color: #e0e0e0;
+    border: none;
+    margin: 80px auto 0 auto;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.busquedac{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.busquedac input {
+    padding: 12px;
+    border: none;
+    margin: 20px auto 0 auto;
+    background-color: #e0e0e0;
+    border-radius: 20px 0 0 20px;
+    height: 20px;
+    width: 600px;
+    font-size: 1rem;
+}
+  
+.busquedac button {
+    background-color: #e0e0e0;
+    border: none;
+    margin: 20px auto 0 auto;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+  
+.busqueda img {
+    width: 20px;
+}
+
+.busquedac img {
+    width: 20px;
+}
+  
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 40px 100px;
+    justify-content: center;
+}
+
+.filtros select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d9d9d9;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.filtrosp{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    gap: 40px 400px;
+    justify-content: center;
+}
+
+.filtrosp select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d9d9d9;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media(max-width: 768px) {
+
+.filtros {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 25px 50px;
+    justify-content: center;
+}
+
+.filtrosp{
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 100px 50px;
+    justify-content: center;
+}
+
+.busqueda input {
+    margin: 70px auto 0 auto;
+    width: 200px;
+    height: 20px;
+}
+
+.busqueda button {
+    margin: 68.5px auto 0 auto;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.busquedac input {
+    margin: 30px auto 0 auto;
+    width: 200px;
+    height: 20px;
+}
+
+.busquedac button {
+    margin: 28.5px auto 0 auto;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.acomodari{
+    margin: 20px;
+    position: static;
+}
+
+.acomodarti{
+    margin: 0;
+    font-size: 10px;
+    position: static;
+}
+
+.acomodarte{
+    margin: 25px;
+    font-size: 20px;
+    position: static;
+}
+
+.acomodarta{
+    font-size: 20px;
+}
+
+.titulopre{
+    margin: 0;
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: 50px; /* Altura fija reducida */
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 40px !important; /* Tamaño muy reducido */
+    height: auto;
+}
+
+.menus {
+    position: absolute;
+    top: 20px; /* Debajo del header */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px; /* Espacio mínimo */
+    width: 60%;
+    justify-content: center; /* Mejor distribución */
+}
+
+button {
+    width: 60px !important;
+    padding: 5px 0;
+    font-size: 0.6rem !important; 
+    background-color: orange;
+    border-radius: 3px;
+    border: none;
+}
+
+.perfil, .atras {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 35px !important; /* Iconos muy pequeños */
+    height: auto;
+}
+
+
+.titulo {
+    background-color: #f0f0f0;
+    margin: 70px auto 0 auto;
+    padding: 6px;
+    font-size: 1.2rem !important; /* Título más pequeño */
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+}
+
+.titulo1 {
+    font-size: 0.8rem !important;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.titulor{
+    width: 60%;
+    margin: 40px;
+}
+
+.titulop{
+    margin: 25px 0 0 0;
+}
+
+/* Grid de categorías ultra compacto */
+.contenedor-categorias {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px; 
+    width: 80%;
+}
+
+.caja {
+    width: 100% !important;
+    padding: 5px !important;
+    margin: 0 !important;
+}
+
+.caja img {
+    height: 80px !important; /* Imágenes pequeñas */
+}
+
+.titulo-caja {
+    font-size: 0.7rem !important; /* Texto muy pequeño */
+    padding: 3px !important;
+}
+
+/* Estilo para caja-contact centrada */
+.caja-contact {
+    width: 95% !important;
+    max-width: 400px; /* Ancho máximo para no estirarse demasiado */
+    padding: 15px !important;
+    margin: 40px;
+    background-color: #76b293;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+textarea {
+    width: 95% !important;
+    max-width: none !important;
+    height: 70px !important; /* Área de texto compacta */
+    font-size: 0.8rem !important;
+}
+
+/* Footer minimalista */
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 40px !important; /* Altura mínima */
+    background-color: orange;
+    display: flex;
+    gap: 5%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.caja-contactc{
+    width: 300px;
+    margin: 50px;
+}
+
+.logof {
+    width: 40px !important; /* Logo footer pequeño */
+}
+
+/* Textos ajustados */
+.texto {
+    font-size: 0.8rem !important;
+    line-height: 1.3;
+    margin: 8px 0;
+}
+
+/* Elementos ocultos en móvil (si es necesario) */
+.espacio {
+    margin: 5px 0;
+    display: none; /* Ocultar espacios extra en móvil */
+}
+
+/* Optimización de enlaces */
+a {
+    font-size: 0.7rem !important;
+    padding: 2px;
+}
+.perfil-usuario {
+    padding: 15px;
+    margin: 10px auto 40px auto;
+}
+
+.perfil-usuario label {
+    font-size: 1rem;
+}
+
+.dato {
+    width: 95% !important;
+}
+
+.recetas {
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-receta {
+    width: 90%;
+}
+
+.tarjeta-receta img {
+    height: 200px;
+}
+
+.tarjeta-receta .anular
+{
+    background-color: #76b293;
+    width: 50%;
+    height: 50%;
+}
+}
+
